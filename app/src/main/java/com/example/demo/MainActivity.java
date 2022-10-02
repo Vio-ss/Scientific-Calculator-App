@@ -1,7 +1,10 @@
 package com.example.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
@@ -9,10 +12,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import org.mariuszgromada.math.mxparser.*;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView previousCalculation;
     private EditText display;
+    ArrayList<MainActivity> mainActivity = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +28,19 @@ public class MainActivity extends AppCompatActivity {
         previousCalculation = findViewById(R.id.previousCalculationView);
         display = findViewById(R.id.displayEditText);
         display.setShowSoftInputOnFocus(false);
+        RecyclerView recyclerView = findViewById(R.id.mRecyclerView);
+        RecyclerView recyclerView1 = findViewById(R.id.m1RecyclerView);
+        setUpmainActivity();
+        Calc adapter = new Calc(this, mainActivity);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView1.setAdapter(adapter);
+        recyclerView1.setLayoutManager(new LinearLayoutManager(this));
     }
+
+    private void setUpmainActivity() {
+    }
+
     private void updateText(String strToAdd){
         String oldString = display.getText().toString();
         int cursorPos = display.getSelectionStart();
@@ -98,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         int cursorPos = display.getSelectionStart();
         int textLen = display.getText().length();
 
-        if (cursorPos != 0 && textLen == 0){
+        if (cursorPos != 0 && textLen != 0){
             SpannableStringBuilder selection = (SpannableStringBuilder) display.getText();
             selection.replace(cursorPos-1, cursorPos, "");
             display.setText(selection);

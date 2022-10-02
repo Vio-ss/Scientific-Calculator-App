@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Calc - Copy/app/src/main/res/drawable/app_background.xml" value="0.215" />
+        <entry key="..\:/Projects/Calc - Copy/app/src/main/res/layout-land/activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Projects/Calc - Copy/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/app_background.xml" value="0.2285" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/arithmetic_button_background.xml" value="0.2285" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/backspace.xml" value="0.2355" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/button_background.xml" value="0.2285" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/clear_button_background.xml" value="0.2285" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/drawable/equals_button_background.xml" value="0.2285" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
+        <entry key="..\:/Projects/Calc/app/src/main/res/layout/activity_main.xml" value="0.2734375" />
         <entry key="..\:/Projects/Demo/app/src/main/res/drawable/app_background.xml" value="0.1835" />
         <entry key="..\:/Projects/Demo/app/src/main/res/drawable/arithmetic_button_background.xml" value="0.1835" />
         <entry key="..\:/Projects/Demo/app/src/main/res/drawable/backspace.xml" value="0.1835" />
